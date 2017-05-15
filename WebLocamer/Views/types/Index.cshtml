@@ -1,0 +1,39 @@
+﻿@model IEnumerable<WebLocamer.Models.type>
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Index</h2>
+
+<p>
+    @Html.ActionLink("Create New", "Create")
+</p>
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.nomType)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.prixType)
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.nomType)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.prixType)
+        </td>
+        <td>
+            @Html.ActionLink("Edit", "Edit", new { id=item.idType }) |
+            @Html.ActionLink("Details", "Details", new { id=item.idType }) |
+            @Html.ActionLink("Delete", "Delete", new { id=item.idType })
+        </td>
+    </tr>
+}
+
+</table>

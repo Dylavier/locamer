@@ -1,0 +1,42 @@
+﻿@model WebLocamer.Models.mobilome
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>mobilome</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.capacite)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.capacite)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.terrace)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.terrace)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.type.nomType)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.type.nomType)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.codeEmplacement }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>

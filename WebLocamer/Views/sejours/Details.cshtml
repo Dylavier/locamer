@@ -1,0 +1,42 @@
+﻿@model WebLocamer.Models.sejour
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>sejour</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.dateDeb)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.dateDeb)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.dateFin)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.dateFin)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.option.libelleOption)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.option.libelleOption)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.idSejour }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>

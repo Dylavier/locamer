@@ -1,0 +1,66 @@
+﻿@model WebLocamer.Models.client
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>client</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.nomCli)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.nomCli)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.prenomCli)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.prenomCli)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.adresseCli)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.adresseCli)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.mailCli)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.mailCli)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.telCli)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.telCli)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.sejour.idSejour)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.sejour.idSejour)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.idCli }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>
